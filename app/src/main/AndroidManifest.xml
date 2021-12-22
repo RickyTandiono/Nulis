@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ac.umn.id.nulis">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Nulis">
+        <activity
+            android:name="ac.umn.id.nulis.Chapter.ChapterDetailActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Chapter.ChapterActivity"/>
+        <activity
+            android:name="ac.umn.id.nulis.Character.AddCharacterActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Character.CharacterActivity" />
+        <activity
+            android:name="ac.umn.id.nulis.Character.CharacterActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.MainMenu" />
+        <activity
+            android:name="ac.umn.id.nulis.Character.CharacterDetailActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Character.CharacterActivity"/>
+        <activity
+            android:name="ac.umn.id.nulis.Character.EditCharacterActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Character.CharacterDetailActivity"/>
+        <activity
+            android:name="ac.umn.id.nulis.Location.LocationDetailActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Location.LocationActivity" />
+        <activity
+            android:name="ac.umn.id.nulis.Location.EditLocationActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Location.LocationActivity" />
+        <activity
+            android:name="ac.umn.id.nulis.Location.AddLocationActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Location.LocationActivity" />
+        <activity
+            android:name="ac.umn.id.nulis.Chapter.ChapterActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.MainMenu" />
+        <activity
+            android:name="ac.umn.id.nulis.Location.LocationActivity"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.MainMenu" />
+        <activity
+            android:name="ac.umn.id.nulis.MainMenu"
+            android:exported="false"
+            android:parentActivityName="ac.umn.id.nulis.Dashboard" />
+        <activity
+            android:name="ac.umn.id.nulis.Dashboard"
+            android:exported="false" />
+        <activity
+            android:name="ac.umn.id.nulis.Authentication.Register"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name="ac.umn.id.nulis.Authentication.Login"
+            android:exported="false"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" /> <!-- Remove Action Bar on MainActivity -->
+        <activity
+            android:name="ac.umn.id.nulis.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
